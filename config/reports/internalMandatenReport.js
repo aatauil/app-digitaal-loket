@@ -20,7 +20,7 @@ export default {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
-      PREFIX regorg: <https://www.w3.org/ns/regorg#>
+      PREFIX regorg: <http://www.w3.org/ns/regorg#>
 
       SELECT DISTINCT (?s AS ?mandataris) ?start ?eind ?rangorde ?status WHERE {
         ?s a mandaat:Mandataris .
@@ -53,7 +53,7 @@ export default {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
-      PREFIX regorg: <https://www.w3.org/ns/regorg#>
+      PREFIX regorg: <http://www.w3.org/ns/regorg#>
       SELECT DISTINCT (?s AS ?mandataris) ?voornaam ?achternaam ?roepnaam ?geslacht ?geboortedatum WHERE {
         ?s a mandaat:Mandataris .
         OPTIONAL {
@@ -90,7 +90,7 @@ export default {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
-      PREFIX regorg: <https://www.w3.org/ns/regorg#>
+      PREFIX regorg: <http://www.w3.org/ns/regorg#>
 
       SELECT DISTINCT (?s AS ?mandataris) ?bestuursfunctieLabel ?bestuursorgaanLabel ?bestuursorgaanClassificatieLabel ?bestuurseenheidLabel ?bestuurseenheidClassificatieLabel ?werkingsgebiedLabel ?werkingsgebiedNiveau WHERE {
         ?s a mandaat:Mandataris .
@@ -154,7 +154,7 @@ export default {
       PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
-      PREFIX regorg: <https://www.w3.org/ns/regorg#>
+      PREFIX regorg: <http://www.w3.org/ns/regorg#>
 
       SELECT DISTINCT (?s AS ?mandataris) ?fractieNaam WHERE {
         ?s a mandaat:Mandataris .

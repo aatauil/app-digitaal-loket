@@ -8,7 +8,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "ext": "http://mu.semte.ch/vocabularies/ext/",
-    "regorg": "https://www.w3.org/ns/regorg#",
+    "regorg": "http://www.w3.org/ns/regorg#",
     "person": "http://www.w3.org/ns/person#",
     "schema": "http://schema.org/",
     "prov": "http://www.w3.org/ns/prov#",
