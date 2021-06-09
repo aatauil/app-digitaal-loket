@@ -379,6 +379,34 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://cache/concepts/"
   end
 
+  ###############
+  # JOBS
+  ###############
+
+  match "/remote-data-objects/*path" do
+    Proxy.forward conn, path, "http://cache/remote-data-objects/"
+  end
+
+  match "/harvesting-collections/*path" do
+    Proxy.forward conn, path, "http://cache/harvesting-collections/"
+  end
+
+  match "/jobs/*path" do
+    Proxy.forward conn, path, "http://cache/jobs/"
+  end
+
+  match "/tasks/*path" do
+    Proxy.forward conn, path, "http://cache/tasks/"
+  end
+
+  match "/data-containers/*path" do
+    Proxy.forward conn, path, "http://cache/data-containers/"
+  end
+
+  match "/job-errors/*path" do
+    Proxy.forward conn, path, "http://cache/job-errors/"
+  end
+
   #################################################################
   # RRN SERVICE: person-uri-for-social-security-number-service
   #################################################################
