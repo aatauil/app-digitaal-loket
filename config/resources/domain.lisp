@@ -27,3 +27,5 @@
 (read-domain-file "master-reports-domain.lisp")
 (read-domain-file "master-submissions-domain.lisp")
 (read-domain-file "master-subsidies-domain.lisp")
+(read-domain-file "master-harvest-domain.lisp")
+(read-domain-file "master-job-domain.lisp")
