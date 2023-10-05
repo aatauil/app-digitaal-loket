@@ -415,14 +415,14 @@ defmodule Dispatcher do
   # loket-submissions sync
   #################################################################
   post "/sync/submissions/login/*path" do
-    forward conn, path, "http://delta-producer-publication-graph-maintainer-submissions/login/"
+    forward conn, path, "http://delta-producer-publication-graph-maintainer/submissions/login/"
   end
 
   #################################################################
   # loket-submissions sync
   #################################################################
   get "/sync/submissions/files/*path" do
-    forward conn, path, "http://delta-producer-publication-graph-maintainer-submissions/files/"
+    forward conn, path, "http://delta-producer-publication-graph-maintainer/submissions/files/"
   end
 
   #################################################################
@@ -754,7 +754,7 @@ defmodule Dispatcher do
   match "/public-services/*path" do
     forward conn, path, "http://cache/public-services/"
   end
-  
+
   match "/concept-display-configurations/*path" do
     forward conn, path, "http://cache/concept-display-configurations/"
   end
